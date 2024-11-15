@@ -13,7 +13,7 @@ const App = () => {
     // Fetch contacts from the backend
     const fetchContacts = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/contacts');
+            const response = await axios.get('https://contact-management-backend-rp6w.onrender.com');
             setContacts(response.data);
         } catch (error) {
             console.error('Error fetching contacts:', error);
